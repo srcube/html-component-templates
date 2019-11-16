@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>streamer</title>
+  <link rel="icon" type="image/svg" href="/common/img/srcube.svg" sizes="32x32">
+  <link rel="stylesheet" href="/common/css/common.css">
+  <style type="text/css">
+    .container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background-color: #1b1b1b;
+    }
+
+    .streamer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .streamer * {
+      font-family: "PingFang SC", Helvetica, Arial, sans-serif;
+      font-weight: 500;
+    }
+
+    .streamer img {
+      width: 256px;
+    }
+
+    .streamer h1 {
+      background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%,
+          #ffd400 40%, #3498db 50%, #f47920 60%,
+          #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 200% 100%;
+      animation: streamer 5s infinite linear;
+
+      text-shadow: 0 5px 0 #dfdfdf;
+      font-size: 6em;
+    }
+
+    .streamer p {
+      color: #dfdfdf;
+      /* text-shadow: 0 2px 0 #dfdfdf; */
+      font-size: 1em;
+    }
+
+    @keyframes streamer {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: -100% 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="streamer">
+      <img src="/common/img/srcube.svg" alt="Srcube">
+      <h1>Srcube</h1>
+      <p>github.com</p>
+      <!-- <p>https://github.com/srcube</p> -->
+    </div>
+  </div>
+</body>
+
+</html>
